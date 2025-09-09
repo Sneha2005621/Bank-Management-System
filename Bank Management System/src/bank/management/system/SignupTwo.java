@@ -61,7 +61,7 @@ import java.awt.event.ActionListener;
             qualification.setBounds(100,270,200,50);
             add(qualification);
 
-            String valqual[] = {"Non-Graduation","Graduation","Post-Graduation","Doctrate","Others"};
+            String valqual[] = {"+2","Graduation","Doctrate","Others"};
             qualbox = new JComboBox(valqual);
             qualbox.setBounds(300,290,400,25);
             qualbox.setBackground(Color.white);
@@ -179,14 +179,9 @@ import java.awt.event.ActionListener;
                 setVisible(false);
                 new SignupThree(formno).setVisible(true);
 
-        }
-    catch (Exception ey) {
+            }
+            catch (Exception ey) {
             System.out.println(ey);
+            }
         }
-        }
-        public static void main(String[] args) {
-            new bank.management.system.SignupTwo("");
-        }
-
-
     }

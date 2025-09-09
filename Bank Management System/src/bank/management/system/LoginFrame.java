@@ -100,7 +100,4 @@ public class LoginFrame extends JFrame implements ActionListener {
             new SignupOne().setVisible(true);
         }
     }
-    public static void main(String[] args) {
-        new LoginFrame();
-    }
 }

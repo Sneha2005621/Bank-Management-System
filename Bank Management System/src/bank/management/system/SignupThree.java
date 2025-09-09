@@ -174,7 +174,7 @@ public class SignupThree extends JFrame implements ActionListener {
 
             String pinnumber = "" + Math.abs((random.nextLong() % 9000L) + 1000L);
 
-            String facility = "";
+            String facility = null;
             if (c1.isSelected()) {
                 facility = facility + " ATM Card";
             }
@@ -207,7 +207,7 @@ public class SignupThree extends JFrame implements ActionListener {
                    JOptionPane.showMessageDialog(null,"Card Number: "+cardnumber + "\nPin: "+ pinnumber);
 
                    setVisible(false);
-                   new Deposit(pinnumber).setVisible(true);
+                   new LoginFrame().setVisible(true);
                 }
             }
             catch (Exception ez) {
@@ -219,8 +219,4 @@ public class SignupThree extends JFrame implements ActionListener {
            new LoginFrame().setVisible(true);
         }
     }
-    public static void main(String[] args) {
-         new SignupThree("");
-    }
-
 }

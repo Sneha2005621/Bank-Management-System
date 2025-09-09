@@ -72,6 +72,11 @@ public class SignupOne extends JFrame implements ActionListener {
         female.setBackground(Color.white);
         add(female);
 
+        other = new JRadioButton("Other");
+        other.setBounds(600,260,100,20);
+        other.setBackground(Color.white);
+        add(other);
+
         ButtonGroup genderGroup = new ButtonGroup();
         genderGroup.add(male);
         genderGroup.add(female);
@@ -221,8 +226,5 @@ public class SignupOne extends JFrame implements ActionListener {
         } catch (Exception ex) {
             System.out.println(ex);
         }
-    }
-    public static void main(String[] args) {
-        new SignupOne();
     }
 }
