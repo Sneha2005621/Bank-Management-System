@@ -34,6 +34,7 @@ BankManagementSystem/
 │ ├── Deposit.java
 │ ├── FastCash.java
 │ ├── LoginFrame.java
+│ ├── Main.java
 │ ├── MiniStatement.java
 │ ├── PinChange.java
 │ ├── SignupOne.java
@@ -54,7 +55,7 @@ BankManagementSystem/
 
 4. Update the database connection details in Conn.java.
 
-5. Run LoginFrame.java to start the application.
+5. Run Main.java to start the application.
 
 ## Conclusion
 The Bank Management System project demonstrates the use of Java for GUI-based application development, along with database connectivity through JDBC. It successfully implements the basic functionalities required in a banking system and serves as a foundation for more advanced projects.
